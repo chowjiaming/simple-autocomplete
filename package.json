@@ -1,0 +1,26 @@
+{
+  "name": "simple-autocomplete",
+  "version": "1.0.0",
+  "description": "Simple databaseless autocomplete system. Returns results from words in text file.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joefstack/simple-autocomplete.git"
+  },
+  "keywords": [
+    "autocomplete",
+    "databasless"
+  ],
+  "author": "Joefstack",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joefstack/simple-autocomplete/issues"
+  },
+  "homepage": "https://github.com/joefstack/simple-autocomplete#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
