@@ -5,7 +5,6 @@ FROM node:10.16-alpine as client
 
 # Working directory be app
 WORKDIR /usr/app/client/
-
 COPY client/package*.json ./
 
 # Install dependencies
@@ -15,10 +14,9 @@ RUN npm install
 COPY client/ ./
 RUN ls
 
-RUN npm build
+RUN npm run build
 
 # Stage 2 : Build Server
-
 FROM node:10.16-alpine
 
 WORKDIR /usr/src/app/

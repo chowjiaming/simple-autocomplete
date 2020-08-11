@@ -6,10 +6,8 @@ const app = express();
 app.use("/autocomplete", require("./api/autocomplete"));
 
 // Use sample frontend
-app.use(express.static("client/build"));
-app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
-});
+const CLIENT_BUILD_PATH = path.join(__dirname, "../client/build");
+app.use(express.static(CLIENT_BUILD_PATH));
 
 // Set server listening port
 const PORT = process.env.PORT || 8080;
