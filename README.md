@@ -22,3 +22,8 @@ docker-compose up --build
 
 Your server will now be serving from localhost:8080 with the sample client serving from the root.
 Autocomplete requests will be served at /autocomplete/$partial
+
+### Project Specs and Comments
+
+This project reads txt files 
+
