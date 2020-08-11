@@ -1,6 +1,5 @@
 const express = require("express");
 const router = express.Router();
-const parseFile = require("../utils/parseFile");
 
 module.exports = (wordPool) => {
   // Returns empty array if empty string query is sent
